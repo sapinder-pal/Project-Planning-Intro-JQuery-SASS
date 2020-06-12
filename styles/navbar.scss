@@ -1,0 +1,40 @@
+.navbar {
+    padding: 5% 10%;
+
+    >* {
+        flex: 1 1 auto;
+    }
+
+    .navbar-toggler{
+		text-align: right;
+		&:focus {
+    	    outline: none; //remove dotted square around toggler when clicked
+		}
+	}
+
+    #navigation-content {
+		justify-content: flex-end;
+
+        ul.navbar-nav {
+			flex-grow: 1;
+			justify-content: flex-end;
+			align-items: center;
+            gap: 5%;
+
+            .nav-item {
+                .nav-link {
+					position: relative; //to be used for child element. see in 'effects.scss'
+                    font-size: 0.8em;
+					letter-spacing: 1px;
+                }
+
+                &.separator {
+                    height: 0.3em;
+                    width: 0.3em;
+                    background: #a0a1ac;
+                    border-radius: 100%;
+				}
+			}
+        }
+    }
+}

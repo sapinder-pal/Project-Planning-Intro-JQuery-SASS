@@ -1,0 +1,66 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+main .text-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 5% 5% 5% 10%;
+  overflow: hidden;
+}
+
+main .text-wrapper .title-heading {
+  font-size: 3.5em;
+}
+
+main .text-wrapper .sub-heading {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  margin: 5% auto 10%;
+  color: #5b5f71;
+}
+
+main .text-wrapper h3 {
+  vertical-align: middle;
+  font-size: .9em;
+  font-weight: 400;
+  color: #a0a1ac;
+  letter-spacing: 3px;
+}
+
+main .text-wrapper h3.above-title span,
+main .text-wrapper h3.see-preview a {
+  color: white;
+  font-size: .85em;
+  margin-right: 1em;
+  letter-spacing: normal;
+}
+
+main .text-wrapper h3.above-title span {
+  background: black;
+  padding: .2em .4em;
+  border-radius: 30%/60%;
+}
+
+main .text-wrapper h3.see-preview {
+  white-space: nowrap;
+}
+
+main .text-wrapper h3.see-preview a {
+  background: #ff4949e3;
+  padding: 1em 2em;
+  border-radius: 5px;
+}
+
+main .bg-img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+}
+/*# sourceMappingURL=main-container.css.map */

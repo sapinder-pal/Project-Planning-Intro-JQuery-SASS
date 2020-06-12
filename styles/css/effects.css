@@ -1,0 +1,29 @@
+.a-effect {
+  position: absolute;
+  bottom: .5rem;
+  height: 2px;
+  width: 30%;
+  background: white;
+}
+
+@media (max-width: 991px) {
+  .navbar #navigation-content {
+    -webkit-transition: all 0.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 0.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .navbar #navigation-content.collapse {
+    display: unset;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    opacity: 0;
+  }
+  .navbar #navigation-content ul.navbar-nav .nav-item.separator {
+    height: 100%;
+    width: 1px;
+    border-radius: 0;
+  }
+  .navbar #navigation-content ul.navbar-nav .nav-link:nth-child(1) .a-effect, .navbar #navigation-content ul.navbar-nav .nav-link:nth-child(2) .a-effect {
+    background: black;
+  }
+}
+/*# sourceMappingURL=effects.css.map */

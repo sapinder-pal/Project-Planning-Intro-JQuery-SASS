@@ -1,0 +1,65 @@
+main {
+    display: flex;
+    position: relative;
+
+    .text-wrapper {
+        flex: 0 0 50%;
+		padding: 5% 5% 5% 10%;
+		overflow: hidden;
+
+        .title-heading {
+            font-size: 3.5em;
+        }
+
+        .sub-heading {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 400;
+            text-transform: none;
+            margin: 5% auto 10%;
+            color: #5b5f71;
+        }
+
+
+        h3 {
+            vertical-align: middle;
+            font-size: .9em;
+            font-weight: 400;
+            color: #a0a1ac;
+            letter-spacing: 3px;
+
+            &.above-title span,
+            &.see-preview a {
+                color: white;
+                font-size: .85em;
+				margin-right: 1em;
+				letter-spacing: normal;
+            }
+
+            &.above-title {
+                span {
+                    background: black;
+                    padding: .2em .4em;
+                    border-radius: 30%/60%;
+                }
+            }
+
+            &.see-preview {
+                white-space: nowrap;
+
+                a {
+                    background: #ff4949e3;
+                    padding: 1em 2em;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .bg-img {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: -1;
+    }
+
+}
